@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { padding-bottom: 76px; } /* chừa chỗ cho thanh CTA mobile */
+@media (min-width: 768px) { body { padding-bottom: 0; } }
+
+.btn-cta { background: #FF7A1A; box-shadow: 0 6px 0 #C94F00; transition: transform .1s, box-shadow .1s; }
+.btn-cta:active { transform: translateY(4px); box-shadow: 0 2px 0 #C94F00; }
+:focus-visible { outline: 3px solid #FFC93C; outline-offset: 2px; }
+
+@keyframes popIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.pop-in { animation: popIn .35s ease-out; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .pop-in { animation: none; } }
