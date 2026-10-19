@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01 Ngày Trải Nghiệm Tiếng Anh – Học thử 0đ</title>
+<meta name="description" content="Một ngày học thử tiếng Anh cùng mentor IELTS 7.5+. Lấy lại cảm hứng, có lộ trình rõ ràng. Đăng ký miễn phí.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+  // Cấu hình màu thương hiệu: xanh dương (học thuật) + cam (hành động)
+  tailwind.config = {
+    theme: { extend: {
+      fontFamily: { sans: ['"Be Vietnam Pro"', 'system-ui', 'sans-serif'] },
+      colors: {
+        navy: '#0F2A66', brand: '#2563EB', sky: '#EAF2FF',
+        sun: '#FFC93C', cta: '#FF7A1A', ctaDark: '#E8600A'
+      }
+    } }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { padding-bottom: 76px; } /* chừa chỗ cho thanh CTA cố định trên mobile */
+  @media (min-width: 768px) { body { padding-bottom: 0; } }
+  @keyframes popIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  .pop-in { animation: popIn .35s ease-out; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .pop-in { animation: none; } }
+  .btn-cta { background: #FF7A1A; box-shadow: 0 6px 0 #C94F00; transition: transform .1s, box-shadow .1s; }
+  .btn-cta:active { transform: translateY(4px); box-shadow: 0 2px 0 #C94F00; }
+  :focus-visible { outline: 3px solid #FFC93C; outline-offset: 2px; }
+</style>
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased">
+
+<!-- ========== THANH ĐIỀU HƯỚNG ========== -->
+<header class="bg-navy text-white">
+  <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+    <a href="#" class="font-extrabold text-lg">Eng<span class="text-sun">Day</span></a>
+    <a href="#dang-ky" class="hidden md:inline-block text-sm font-semibold bg-sun text-navy px-4 py-2 rounded-full">Đăng ký học thử</a>
+    <span class="md:hidden text-xs text-sky/80">Hotline: 0900 000 000</span>
+  </div>
+</header>
+
+<!-- ========== 1. HERO ========== -->
+<section class="bg-navy text-white relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 pt-8 pb-14 md:py-20 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <p class="inline-block bg-sun text-navy text-xs font-bold px-3 py-1 rounded-full mb-4">Chỉ còn 20 suất trong tháng này</p>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
+        Chỉ 1 ngày để biết tiếng Anh của bạn
+        <span class="text-sun">có thể đi xa đến đâu</span>
+      </h1>
+      <p class="mt-4 text-sky/90 text-base md:text-lg max-w-md">
+        01 Ngày Trải Nghiệm: học thật với mentor IELTS 7.5+, nhận lộ trình riêng cho bạn. Hoàn toàn miễn phí, không ràng buộc.
+      </p>
+      <a href="#dang-ky" class="btn-cta mt-6 block md:inline-block text-center text-white font-bold text-lg px-8 py-4 rounded-2xl">Đăng ký ngay</a>
+      <p class="mt-3 text-xs text-sky/70">Đã có hơn 3.200 người trải nghiệm. Không cần thẻ, không phí ẩn.</p>
+    </div>
+    <!-- Chỗ đặt ảnh/video minh họa: thay bằng <video> hoặc <img> của bạn -->
+    <div class="relative">
+      <div class="aspect-video md:aspect-[4/3] rounded-3xl bg-gradient-to-br from-brand to-sky/30 border-4 border-white/20 flex items-center justify-center overflow-hidden">
+        <!-- Ví dụ: <video src="video.mp4" class="w-full h-full object-cover" controls poster="anh-bia.jpg"></video> -->
+        <button type="button" aria-label="Phát video giới thiệu" class="w-20 h-20 rounded-full bg-sun text-navy flex items-center justify-center shadow-xl">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+      <div class="absolute -bottom-4 -left-2 bg-white text-navy rounded-2xl px-4 py-2 shadow-lg text-sm font-bold">4.9/5 từ 1.800 đánh giá</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 2. VẤN ĐỀ (PAIN POINTS) ========== -->
+<section class="bg-slate-50 py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl md:text-4xl font-extrabold text-navy text-center">Bạn có đang gặp những điều này?</h2>
+    <p class="text-center text-slate-600 mt-2">Rất nhiều người đi làm cũng từng như vậy.</p>
+    <div class="mt-8 grid gap-4 md:grid-cols-3">
+      <div class="bg-white rounded-2xl p-6 border-l-8 border-cta shadow-sm">
+        <div class="text-3xl" aria-hidden="true">⏰</div>
+        <h3 class="font-bold text-lg mt-2">Quá bận để đi học</h3>
+        <p class="text-slate-600 mt-1 text-sm">Đi làm cả ngày, tối về chỉ muốn nghỉ. Lịch học cố định luôn bị bỏ dở giữa chừng.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 border-l-8 border-sun shadow-sm">
+        <div class="text-3xl" aria-hidden="true">🧩</div>
+        <h3 class="font-bold text-lg mt-2">Mất gốc, không biết bắt đầu từ đâu</h3>
+        <p class="text-slate-600 mt-1 text-sm">Ngữ pháp rời rạc, sợ nói sai, mở app học vài ngày rồi lại bỏ.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 border-l-8 border-brand shadow-sm">
+        <div class="text-3xl" aria-hidden="true">💸</div>
+        <h3 class="font-bold text-lg mt-2">Sợ tốn tiền mà không hiệu quả</h3>
+        <p class="text-slate-600 mt-1 text-sm">Đóng cả khóa vài chục triệu nhưng không biết có hợp với mình hay không.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 3. GIẢI PHÁP ========== -->
+<section class="py-14">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+    <div class="rounded-3xl bg-sky p-8 text-center order-2 md:order-1">
+      <p class="text-6xl font-extrabold text-brand">1 ngày</p>
+      <p class="mt-2 text-navy font-semibold">để thử trước, quyết định sau</p>
+      <div class="mt-5 flex flex-wrap justify-center gap-2 text-sm">
+        <span class="bg-white rounded-full px-3 py-1 font-medium">Học thật</span>
+        <span class="bg-white rounded-full px-3 py-1 font-medium">Test trình độ</span>
+        <span class="bg-white rounded-full px-3 py-1 font-medium">Lộ trình riêng</span>
+      </div>
+    </div>
+    <div class="order-1 md:order-2">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-navy">Một ngày đủ để lấy lại cảm hứng</h2>
+      <p class="mt-3 text-slate-600">Thay vì cam kết dài hạn, bạn dành đúng một ngày để học cùng mentor, biết mình đang ở đâu và cần làm gì tiếp theo.</p>
+      <ul class="mt-5 space-y-3">
+        <li class="flex gap-3"><span class="mt-1 w-6 h-6 shrink-0 rounded-full bg-cta text-white text-sm flex items-center justify-center">✓</span><span><b>Linh hoạt:</b> chọn đúng 1 ngày phù hợp lịch của bạn.</span></li>
+        <li class="flex gap-3"><span class="mt-1 w-6 h-6 shrink-0 rounded-full bg-cta text-white text-sm flex items-center justify-center">✓</span><span><b>Hứng khởi:</b> học bằng giao tiếp thật, không học vẹt.</span></li>
+        <li class="flex gap-3"><span class="mt-1 w-6 h-6 shrink-0 rounded-full bg-cta text-white text-sm flex items-center justify-center">✓</span><span><b>Rõ ràng:</b> nhận bản lộ trình 90 ngày dành riêng cho bạn.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4. NỘI DUNG KHÓA HỌC ========== -->
+<section class="bg-slate-50 py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl md:text-4xl font-extrabold text-navy text-center">Một ngày học diễn ra thế nào?</h2>
+    <div class="mt-8 grid gap-4 md:grid-cols-3">
+      <article class="bg-white rounded-2xl overflow-hidden shadow-sm">
+        <div class="bg-sun px-5 py-3 flex justify-between font-bold text-navy"><span>Ca sáng</span><span>08:30 – 11:30</span></div>
+        <ul class="p-5 space-y-2 text-sm text-slate-700">
+          <li>• Test trình độ 4 kỹ năng</li>
+          <li>• Phát âm chuẩn trong 60 phút</li>
+          <li>• Bí quyết nghe hiểu tự nhiên</li>
+        </ul>
+      </article>
+      <article class="bg-white rounded-2xl overflow-hidden shadow-sm">
+        <div class="bg-brand px-5 py-3 flex justify-between font-bold text-white"><span>Ca chiều</span><span>13:30 – 16:30</span></div>
+        <ul class="p-5 space-y-2 text-sm text-slate-700">
+          <li>• Thực hành giao tiếp theo tình huống</li>
+          <li>• Từ vựng nhớ lâu bằng ngữ cảnh</li>
+          <li>• Chữa lỗi trực tiếp cùng mentor</li>
+        </ul>
+      </article>
+      <article class="bg-white rounded-2xl overflow-hidden shadow-sm">
+        <div class="bg-navy px-5 py-3 flex justify-between font-bold text-white"><span>Ca tối</span><span>19:00 – 21:00</span></div>
+        <ul class="p-5 space-y-2 text-sm text-slate-700">
+          <li>• Tư vấn 1-1 và nhận lộ trình riêng</li>
+          <li>• Giải đáp mọi thắc mắc về học phí</li>
+          <li>• Nhận bộ tài liệu tự học</li>
+        </ul>
+      </article>
+    </div>
+    <p class="text-center text-sm text-slate-500 mt-4">Bạn có thể chọn học một hoặc nhiều ca trong ngày.</p>
+  </div>
+</section>
+
+<!-- ========== 5. ĐỘI NGŨ GIẢNG VIÊN ========== -->
+<section class="py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl md:text-4xl font-extrabold text-navy text-center">Học cùng mentor đã từng đi qua</h2>
+    <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Thay khối ảnh bằng <img src="..." class="w-full h-full object-cover"> -->
+      <div class="rounded-2xl border border-slate-200 p-5 text-center">
+        <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-brand to-sky flex items-center justify-center text-4xl text-white font-bold">M</div>
+        <h3 class="font-bold text-lg mt-3">Ms. Minh Anh</h3>
+        <span class="inline-block mt-1 bg-sun text-navy text-sm font-bold px-3 py-1 rounded-full">IELTS 8.0</span>
+        <p class="text-sm text-slate-600 mt-2">7 năm giảng dạy. Chuyên luyện giao tiếp và phát âm cho người mất gốc.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 p-5 text-center">
+        <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-cta to-sun flex items-center justify-center text-4xl text-white font-bold">H</div>
+        <h3 class="font-bold text-lg mt-3">Mr. Hoàng Long</h3>
+        <span class="inline-block mt-1 bg-sun text-navy text-sm font-bold px-3 py-1 rounded-full">IELTS 7.5</span>
+        <p class="text-sm text-slate-600 mt-2">5 năm kinh nghiệm. Từng hướng dẫn hơn 800 học viên đi làm.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 p-5 text-center sm:col-span-2 lg:col-span-1">
+        <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-navy to-brand flex items-center justify-center text-4xl text-white font-bold">T</div>
+        <h3 class="font-bold text-lg mt-3">Ms. Thu Trang</h3>
+        <span class="inline-block mt-1 bg-sun text-navy text-sm font-bold px-3 py-1 rounded-full">IELTS 8.5</span>
+        <p class="text-sm text-slate-600 mt-2">9 năm giảng dạy. Du học Anh, chuyên xây lộ trình cá nhân hóa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 6. FEEDBACK / SOCIAL PROOF ========== -->
+<section class="bg-navy text-white py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl md:text-4xl font-extrabold text-center">Họ đã thử, và đây là cảm nhận</h2>
+    <div class="mt-6 grid grid-cols-3 gap-3 text-center">
+      <div class="bg-white/10 rounded-2xl py-4"><p class="text-2xl md:text-4xl font-extrabold text-sun">3.200+</p><p class="text-xs md:text-sm">học viên</p></div>
+      <div class="bg-white/10 rounded-2xl py-4"><p class="text-2xl md:text-4xl font-extrabold text-sun">94%</p><p class="text-xs md:text-sm">hài lòng</p></div>
+      <div class="bg-white/10 rounded-2xl py-4"><p class="text-2xl md:text-4xl font-extrabold text-sun">4.9/5</p><p class="text-xs md:text-sm">điểm đánh giá</p></div>
+    </div>
+    <div class="mt-6 grid gap-4 md:grid-cols-3">
+      <blockquote class="bg-white text-slate-800 rounded-2xl p-5">
+        <p class="text-sm">“Mình mất gốc 10 năm, học thử xong dám mở miệng nói ngay trong buổi chiều. Lộ trình rất rõ ràng.”</p>
+        <footer class="mt-3 text-sm font-bold text-navy">Lan Phương, nhân viên văn phòng</footer>
+      </blockquote>
+      <blockquote class="bg-white text-slate-800 rounded-2xl p-5">
+        <p class="text-sm">“Đi làm bận nên chỉ dám thử 1 ngày. Không bị ép đăng ký khóa, mentor tư vấn rất thật.”</p>
+        <footer class="mt-3 text-sm font-bold text-navy">Quang Huy, kỹ sư phần mềm</footer>
+      </blockquote>
+      <blockquote class="bg-white text-slate-800 rounded-2xl p-5">
+        <p class="text-sm">“Phát âm của mình được sửa từng âm một. Học xong lại muốn học tiếp.”</p>
+        <footer class="mt-3 text-sm font-bold text-navy">Thanh Hà, sinh viên năm cuối</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 7. ƯU ĐÃI & KHAN HIẾM (có đồng hồ đếm ngược) ========== -->
+<section class="py-14 bg-sun/20">
+  <div class="max-w-xl mx-auto px-4 text-center">
+    <h2 class="text-2xl md:text-4xl font-extrabold text-navy">Ưu đãi dùng thử kết thúc sau</h2>
+    <div class="mt-5 grid grid-cols-4 gap-2" aria-live="off">
+      <div class="bg-navy text-white rounded-xl py-3"><p id="cd-d" class="text-2xl md:text-3xl font-extrabold">00</p><p class="text-xs">Ngày</p></div>
+      <div class="bg-navy text-white rounded-xl py-3"><p id="cd-h" class="text-2xl md:text-3xl font-extrabold">00</p><p class="text-xs">Giờ</p></div>
+      <div class="bg-navy text-white rounded-xl py-3"><p id="cd-m" class="text-2xl md:text-3xl font-extrabold">00</p><p class="text-xs">Phút</p></div>
+      <div class="bg-navy text-white rounded-xl py-3"><p id="cd-s" class="text-2xl md:text-3xl font-extrabold">00</p><p class="text-xs">Giây</p></div>
+    </div>
+    <div class="mt-6 bg-white rounded-3xl p-6 shadow-lg border-2 border-cta">
+      <p class="text-slate-500">Giá gốc <span class="line-through text-xl font-bold">199.000đ</span></p>
+      <p class="text-5xl font-extrabold text-cta mt-1">0đ</p>
+      <p class="text-sm text-slate-600 mt-1">Giá dùng thử cho 20 học viên đăng ký sớm nhất</p>
+      <div class="mt-4 h-3 bg-slate-100 rounded-full overflow-hidden"><div class="h-full w-[85%] bg-cta rounded-full"></div></div>
+      <p class="text-sm font-semibold text-ctaDark mt-2">Đã có 85% suất được giữ chỗ</p>
+      <a href="#dang-ky" class="btn-cta mt-5 block text-center text-white font-bold text-lg px-6 py-4 rounded-2xl">Giữ suất 0đ của tôi</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 8. FORM ĐĂNG KÝ ========== -->
+<section id="dang-ky" class="py-14 scroll-mt-4">
+  <div class="max-w-md mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-navy text-center">Đăng ký học thử miễn phí</h2>
+    <p class="text-center text-slate-600 mt-2 text-sm">Để lại thông tin, tư vấn viên sẽ gọi xác nhận trong 30 phút.</p>
+    <form id="reg-form" class="mt-6 space-y-4" novalidate>
+      <div>
+        <label for="name" class="block text-sm font-semibold mb-1">Họ và tên</label>
+        <input id="name" name="name" type="text" autocomplete="name" placeholder="Nguyễn Văn A" class="w-full rounded-xl border-2 border-slate-200 px-4 py-3 text-base focus:border-brand focus:outline-none">
+        <p class="err text-xs text-red-600 mt-1 hidden"></p>
+      </div>
+      <div>
+        <label for="phone" class="block text-sm font-semibold mb-1">Số điện thoại</label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="0912 345 678" class="w-full rounded-xl border-2 border-slate-200 px-4 py-3 text-base focus:border-brand focus:outline-none">
+        <p class="err text-xs text-red-600 mt-1 hidden"></p>
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-semibold mb-1">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="ban@email.com" class="w-full rounded-xl border-2 border-slate-200 px-4 py-3 text-base focus:border-brand focus:outline-none">
+        <p class="err text-xs text-red-600 mt-1 hidden"></p>
+      </div>
+      <button type="submit" class="btn-cta w-full text-white font-bold text-lg py-4 rounded-2xl">Gửi đăng ký</button>
+      <p class="text-xs text-center text-slate-500">Thông tin của bạn được bảo mật và không dùng để gửi spam.</p>
+    </form>
+    <div id="success" class="hidden mt-6 bg-sky rounded-2xl p-6 text-center">
+      <p class="text-4xl" aria-hidden="true">🎉</p>
+      <p class="font-bold text-navy text-lg mt-2">Đăng ký thành công!</p>
+      <p class="text-sm text-slate-600 mt-1">Chúng tôi sẽ liên hệ bạn sớm để chốt lịch học thử.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-navy text-sky/70 text-center text-xs py-6 px-4">© 2026 EngDay. Mọi quyền được bảo lưu.</footer>
+
+<!-- Thanh CTA cố định cho mobile -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-slate-200 p-3 flex items-center gap-3">
+  <p class="text-xs leading-tight flex-1"><span class="line-through text-slate-400">199k</span> <b class="text-cta text-base">0đ</b><br>Học thử 1 ngày</p>
+  <a href="#dang-ky" class="btn-cta text-white font-bold px-6 py-3 rounded-xl">Đăng ký ngay</a>
+</div>
+
+<!-- Khung thông báo ảo (Sales Pop) -->
+<div id="sales-pop" class="fixed left-3 bottom-24 md:bottom-6 z-50 max-w-[300px] hidden pop-in" role="status" aria-live="polite">
+  <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-3 flex items-center gap-3">
+    <div class="w-10 h-10 shrink-0 rounded-full bg-cta text-white flex items-center justify-center font-bold" id="pop-avatar">A</div>
+    <p class="text-sm leading-snug"><b id="pop-name"></b> vừa đăng ký thành công khóa học <span id="pop-time" class="text-slate-500"></span></p>
+  </div>
+</div>
+
+<script>
+/* ========== ĐỒNG HỒ ĐẾM NGƯỢC ========== */
+// Hạn chót lưu trong trình duyệt: 2 ngày kể từ lần truy cập đầu. Hết hạn sẽ tự đặt lại.
+(function () {
+  var DURATION = 2 * 24 * 3600 * 1000, KEY = 'engday_deadline', deadline;
+  try {
+    deadline = parseInt(localStorage.getItem(KEY), 10);
+    if (!deadline || deadline < Date.now()) { deadline = Date.now() + DURATION; localStorage.setItem(KEY, deadline); }
+  } catch (e) { deadline = Date.now() + DURATION; }
+  var pad = function (n) { return String(n).padStart(2, '0'); };
+  function tick() {
+    var left = Math.max(0, deadline - Date.now()), s = Math.floor(left / 1000);
+    document.getElementById('cd-d').textContent = pad(Math.floor(s / 86400));
+    document.getElementById('cd-h').textContent = pad(Math.floor(s % 86400 / 3600));
+    document.getElementById('cd-m').textContent = pad(Math.floor(s % 3600 / 60));
+    document.getElementById('cd-s').textContent = pad(s % 60);
+  }
+  tick(); setInterval(tick, 1000);
+})();
+
+/* ========== THÔNG BÁO ẢO (SALES POP) ========== */
+// Hiện ngẫu nhiên sau mỗi 5–7 giây, tự ẩn sau 4 giây.
+(function () {
+  var names = ['Anh Trần Văn B', 'Chị Nguyễn Thị C', 'Anh Lê Minh D', 'Chị Phạm Thu H', 'Bạn Hoàng Gia K', 'Chị Đặng Ngọc M', 'Anh Vũ Quốc T'];
+  var times = ['1 phút trước', '3 phút trước', '5 phút trước', '8 phút trước', '12 phút trước'];
+  var box = document.getElementById('sales-pop');
+  var rand = function (a) { return a[Math.floor(Math.random() * a.length)]; };
+  function show() {
+    var n = rand(names);
+    document.getElementById('pop-name').textContent = n;
+    document.getElementById('pop-avatar').textContent = n.split(' ').pop().charAt(0);
+    document.getElementById('pop-time').textContent = rand(times);
+    box.classList.remove('hidden');
+    box.style.animation = 'none'; void box.offsetWidth; box.style.animation = '';
+    setTimeout(function () { box.classList.add('hidden'); }, 4000);
+    setTimeout(show, 5000 + Math.random() * 2000);
+  }
+  setTimeout(show, 3000);
+})();
+
+/* ========== KIỂM TRA & GỬI FORM ========== */
+(function () {
+  var form = document.getElementById('reg-form');
+  function setErr(input, msg) {
+    var p = input.parentElement.querySelector('.err');
+    p.textContent = msg; p.classList.toggle('hidden', !msg);
+    input.classList.toggle('border-red-500', !!msg);
+  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = form.elements, ok = true;
+    var name = f.name.value.trim(), phone = f.phone.value.replace(/[\s.-]/g, ''), email = f.email.value.trim();
+    setErr(f.name, name.length < 2 ? 'Vui lòng nhập họ và tên.' : ''); if (name.length < 2) ok = false;
+    var phoneOk = /^(0|\+84)\d{9}$/.test(phone);
+    setErr(f.phone, phoneOk ? '' : 'Số điện thoại cần có 10 chữ số, ví dụ 0912345678.'); if (!phoneOk) ok = false;
+    var mailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    setErr(f.email, mailOk ? '' : 'Email chưa đúng định dạng.'); if (!mailOk) ok = false;
+    if (!ok) return;
+
+    // TODO: gửi dữ liệu về hệ thống của bạn (Google Sheets, CRM, API...)
+    // fetch('https://your-api.example/register', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ name, phone, email }) });
+
+    form.classList.add('hidden');
+    document.getElementById('success').classList.remove('hidden');
+  });
+})();
+</script>
+</body>
+</html>
